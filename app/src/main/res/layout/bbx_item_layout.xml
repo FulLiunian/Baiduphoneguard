@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="120dp">
+    <ImageView
+        android:id="@+id/function_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/flow_call"
+        android:layout_centerInParent="true"/>
+    <TextView
+        android:id="@+id/function_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/liulianghf"
+        android:layout_below="@id/function_icon"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

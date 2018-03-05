@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSplash_bg"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/splash_third_bg" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/splash_third_top"
+        app:layout_heightPercent="30%"
+        app:layout_widthPercent="60%" />
+
+    <ImageView
+        android:id="@+id/iv_third_center"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/splash_third_center"
+        app:layout_heightPercent="45%"
+        app:layout_widthPercent="70%" />
+
+    <LinearLayout
+        android:id="@+id/ll_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_third_center"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/agreen_xieyi"
+            android:textColor="@color/colorSplash_text_center"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp">
+
+            <CheckBox
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/splash_chk_selector"
+                android:button="@null"
+                android:checked="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/join_plan"
+                android:textColor="@color/colorSplash_text_center" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_go"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ll_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:background="@color/colorSplash_but"
+        android:text="@string/go_guard"
+        android:textColor="@android:color/white"
+        android:textSize="21sp"
+        app:layout_widthPercent="80%" />
+</android.support.percent.PercentRelativeLayout>

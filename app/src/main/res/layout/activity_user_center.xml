@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_user_center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zys.baiduphoneguard.activity.UserCenterActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true">
+
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentScrim="@color/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:title=" ">
+
+
+            <!--用户中心头像-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_collapseMode="parallax">
+
+                <!--两张图片叠在一起  相对布局  帧布局-->
+                <FrameLayout
+                    android:id="@+id/fl_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/user_head_photo" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:src="@mipmap/user_head_photo_bg" />
+
+                </FrameLayout>
+
+                <!--文本  shape-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/fl_head"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/user_jingyan_shape"
+                    android:padding="8dp"
+                    android:text="@string/user_qd"
+                    android:textColor="@android:color/white" />
+
+            </RelativeLayout>
+
+
+            <!--Toolbar-->
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/tlCenter"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimary"
+                app:theme="@style/toolBar"
+                app:layout_collapseMode="pin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/user_ws"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:background="@drawable/xiao_wei_shape"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="2dp"
+                    android:text="@string/user_pb"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp" />
+
+            </android.support.v7.widget.Toolbar>
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F8F8F8F8"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="1px"
+                    android:layout_weight="1"
+                    android:background="@android:color/white">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="20dp"
+                        android:src="@mipmap/metal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="8dp"
+                        android:text="@string/user_xz" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3px"
+                    android:layout_weight="1"
+                    android:background="@android:color/white">
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/task_shape"
+                        android:gravity="center"
+                        android:text="5"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="8dp"
+                        android:text="@string/user_rw" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="1px"
+                    android:background="@android:color/white">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="20dp"
+                        android:src="@mipmap/bd_box" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:text="@string/user_hz"
+                        android:textColor="@android:color/black" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="1px"
+                    android:layout_marginTop="2px"
+                    android:background="@android:color/white">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="7">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20dp"
+                            android:src="@mipmap/bd_wallet" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="15dp"
+                            android:text="@string/user_bdqb"
+                            android:textColor="@android:color/black" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="3">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/user_fx" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="1px"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/white">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="20dp"
+                        android:src="@mipmap/main_skin" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:text="@string/user_syhf"
+                        android:textColor="@android:color/black" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="1px"
+                    android:layout_marginTop="2px"
+                    android:background="@android:color/white">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="20dp"
+                        android:src="@mipmap/general_setting" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:text="@string/user_settings"
+                        android:textColor="@android:color/black" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="1px"
+                    android:layout_marginTop="1px"
+                    android:background="@android:color/white">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="20dp"
+                        android:src="@mipmap/question_feedback" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:text="@string/user_wtfk"
+                        android:textColor="@android:color/black" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_update"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="2px"
+                    android:background="@android:color/white">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="20dp"
+                        android:src="@mipmap/about_update" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:text="@string/user_gx"
+                        android:textColor="@android:color/black" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

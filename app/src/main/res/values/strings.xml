@@ -1,0 +1,110 @@
+<resources>
+    <string name="app_name">百度卫士</string>
+    //引导splash
+    <string name="agreen_xieyi">同意《<u>安装许可协议</u>》</string>
+    <string name="join_plan">加入<u>用户体验改造计划</u></string>
+    <string name="splash_tiaoguo"><![CDATA[跳过>]]></string>
+    <string name="go_guard">进入卫士</string>
+    //主页main
+    <string name="main_weishi">百度手机卫士</string>
+    <string name="sjjs">手机加速</string>
+    <string name="ljql">垃圾清理</string>
+    <string name="aqfh">安全防护</string>
+    <string name="llhf">流量话费</string>
+    <string name="bbx">百宝箱</string>
+    <string name="yygl">应用管理</string>
+    //user
+    <string name="user_gx">关于与更新</string>
+    <string name="user_wtfk">问题与反馈</string>
+    <string name="user_settings">通用设置</string>
+    <string name="user_syhf">首页换肤</string>
+    <string name="user_fx">常年返现1%起</string>
+    <string name="user_bdqb">百度钱包</string>
+    <string name="user_hz">小卫盒子</string>
+    <string name="user_rw">5个任务未完成</string>
+    <string name="user_xz">14个勋章可领取</string>
+    <string name="user_pb">小卫伴你1天</string>
+    <string name="user_ws">我的卫士</string>
+    <string name="user_qd">签到领取经验</string>
+
+    //更新
+    <string name="rights">Copyright &#169; 2017 Baidu,Inc.All Rights Reserved</string>
+    <string name="update_bb">V1.0 Beta</string>
+    <string name="update_bd">病毒库更新</string>
+    <string name="update_lx">联系我们</string>
+    <string name="update_gx">版本更新</string>
+    <string name="update_xk">安装许可协议</string>
+    <string name="update_ty">用户体验计划</string>
+
+    <string-array name="function_name">
+        <item>流量话费</item>
+        <item>回首页</item>
+        <item>应用管理</item>
+        <item>病毒查杀</item>
+        <item>骚扰拦截</item>
+        <item>软件锁</item>
+        <item>家人守护</item>
+        <item>手机充值</item>
+        <item>深度清理</item>
+        <item>安全工具</item>
+        <item>通话取证</item>
+        <item>Wi-Fi雷达</item>
+        <item>超强模式</item>
+        <item>通知盒子</item>
+        <item>红包助手</item>
+        <item>权限管理</item>
+    </string-array>
+
+    <string-array name="function_icon">
+        <item>flow_call</item>
+        <item>treasure_ches_down</item>
+        <item>app_manager</item>
+        <item>virus_killing</item>
+        <item>harassment_interception</item>
+        <item>software_lock</item>
+        <item>family_guardian</item>
+        <item>cellular_phone_replenishing</item>
+        <item>deep_cleaning</item>
+        <item>security_tool</item>
+        <item>call_forensics</item>
+        <item>wifi_radar</item>
+        <item>super_mode</item>
+        <item>notification_box</item>
+        <item>red_assistant</item>
+        <item>privilege_management</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="update">正在检查升级...</string>
+    <string name="yijqiuj">一键求救</string>
+    <string name="shunjianqj">危机时刻，瞬间求救</string>
+    <string name="shouhujr">守护家人</string>
+    <string name="jinfangzp">开启守护、谨防诈骗</string>
+    <string name="shishijx">实时警讯</string>
+    <string name="jikeaq">动态播报，即刻安全</string>
+    <string name="liulianghf">流量话费</string>
+    <string name="search_name">曾杨升</string>
+    <string name="search_phone">15073362867</string>
+    <string name="search_address">湖南省 株洲市 中国移动</string>
+    <string name="show_name">曾杨升</string>
+    <string name="show_phone">15073362867</string>
+    <string name="show_address">湖南省 株洲市 中国移动</string>
+    <string name="urgent_name">曾杨升</string>
+    <string name="urgent_phone">15073362867</string>
+    <string name="help_qiujiu">危机时刻，瞬间求救</string>
+    <string name="help_kuaisu">绑定紧急联系人 快速求救</string>
+    <string name="help_yijian">开启一键求救</string>
+    <string name="success_zhuyi">注意：请确保手机信号畅通，并授予百度手机卫士发送短信、读取位置信息的权限</string>
+    <string name="success_jinji">紧急联系人</string>
+    <string name="second_tianjia">请添加紧急联系人和求救短信</string>
+    <string name="second_shuru">请输入手机号（最多添加3人）</string>
+    <string name="second_queren">确定</string>
+    <string name="second_weixian">我遇到危险，现在不方便打电话，请帮助我。</string>
+    <string name="second_wancheng">完成</string>
+    <string name="second_duanxin">短信通知紧急联系人我已开启一键求救</string>
+    <string name="dialog_tishi">百度手机卫士提示</string>
+    <string name="dialog_banben">当前使用的是最新版本！</string>
+    <string name="dialog_queren">确定</string>
+    <string name="dialog_jujue">残忍拒绝</string>
+</resources>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F1"
+    android:fitsSystemWindows="true"
+    tools:context="com.zys.baiduphoneguard.activity.UpdateActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tlb_update"
+        android:layout_width="match_parent"
+        app:theme="@style/toolBar"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:title="关于与更新"
+        app:titleTextColor="@android:color/white"></android.support.v7.widget.Toolbar>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_logo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/tlb_update"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/baidu_guard" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="@string/update_bb" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_logo"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_update"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="1px"
+            android:background="@android:color/white">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:text="@string/update_gx"
+                android:textColor="@android:color/black" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="1px"
+            android:layout_marginTop="2px"
+            android:background="@android:color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:text="@string/update_bd"
+                android:textColor="@android:color/black" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="1px"
+            android:layout_marginTop="2px"
+            android:background="@android:color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:text="@string/update_lx"
+                android:textColor="@android:color/black" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:background="@color/colorPrimary">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="1px"
+                    android:layout_weight="1"
+                    android:background="#F2F2F1"
+                    android:gravity="center_horizontal"
+                    android:text="@string/update_ty"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#F2F2F1"
+                    android:gravity="center_horizontal"
+                    android:text="@string/update_xk"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_copyright"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/rights"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

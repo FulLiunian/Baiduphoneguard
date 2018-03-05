@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context="com.zys.baiduphoneguard.activity.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true"
+        app:title="@string/main_weishi"
+        app:titleTextColor="@android:color/white">
+
+        <ImageView
+            android:id="@+id/iv_super_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/opern_super_mode" />
+
+        <ImageView
+            android:id="@+id/iv_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:src="@mipmap/user_center" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <com.zys.baiduphoneguard.RatingView
+            android:id="@+id/rating_view"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/tv_Score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="100"
+                android:textColor="@android:color/white"
+                android:textSize="58sp" />
+        </com.zys.baiduphoneguard.RatingView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorGridLayout"
+            app:columnCount="3"
+            app:rowCount="2">
+
+            <RelativeLayout
+                android:layout_marginBottom="2px"
+                android:layout_marginRight="2px"
+                android:background="@android:color/white"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1">
+
+                <TextView
+                    android:id="@+id/shoujijiasu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@mipmap/phone_accelerate"
+                    android:text="@string/sjjs" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginBottom="2px"
+                android:background="@android:color/white"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1">
+
+                <TextView
+                    android:id="@+id/lajiqingli"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@mipmap/garbage_clear"
+                    android:text="@string/ljql" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginBottom="2px"
+                android:background="@android:color/white"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1">
+
+                <TextView
+                    android:id="@+id/anquanfanghu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@mipmap/security_tool"
+                    android:text="@string/aqfh" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginBottom="2px"
+                android:background="@android:color/white"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1">
+
+                <TextView
+                    android:id="@+id/liulianghuafei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@mipmap/flow_call"
+                    android:text="@string/llhf" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginBottom="2px"
+                android:background="@android:color/white"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1">
+
+                <TextView
+                    android:id="@+id/baiBaoXiang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@mipmap/treasure_chest_up"
+                    android:text="@string/bbx" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginBottom="2px"
+                android:background="@android:color/white"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1">
+
+                <TextView
+                    android:id="@+id/yingyongguanli"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@mipmap/app_manager"
+                    android:text="@string/yygl" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.GridLayout>
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+
+    <com.thinkcool.circletextimageview.CircleTextImageView
+        android:id="@+id/rtv_head"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        app:citv_border_color="@android:color/white"
+        app:citv_border_width="2dp"
+        app:citv_fill_color="#50555D"
+        app:citv_text_color="@android:color/white"
+        app:citv_text_padding="35dp"
+        app:citv_text_size="16sp"
+        app:citv_text_text="照片" />
+
+    <LinearLayout
+        android:id="@+id/ll_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/rtv_head"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/contact_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/show_name"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/contact_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="@string/show_phone"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@id/ll_contact"
+        android:text="@string/show_address"
+        android:textSize="10sp" />
+
+    <CheckBox
+        android:id="@+id/cb_agree"
+        android:layout_width="13dp"
+        android:layout_height="13dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/help_chk_selector"
+        android:button="@null"
+        android:checked="false"
+        android:enabled="false"/>
+</RelativeLayout>

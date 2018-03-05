@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#3F51B5</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorSplash_bg">#1C62D4</color>
+    <color name="colorSplash_text_center">#7FB4FF</color>
+    <color name="colorSplash_but">#239BFC</color>
+    <color name="colorSplash_go">#679EF1</color>
+    <color name="colorGridLayout">#F6F6F6</color>
+    <color name="for_help_color">#1444A3</color>
+    <color name="for_help_text_color">#8FA6D2</color>
+</resources>

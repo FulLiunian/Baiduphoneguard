@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/for_help_color">
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/white">
+
+            <TextView
+                android:id="@+id/tv_names"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/success_jinji"
+                android:textSize="18dp" />
+
+            <View
+                android:id="@+id/v_line"
+                android:layout_width="600dp"
+                android:layout_height="1px"
+                android:layout_below="@id/tv_names"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+
+            <LinearLayout
+                android:id="@+id/ll_contacts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/v_line"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/warte_mark_light" />
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="43dp"
+            android:src="@drawable/forhelp_circle" />
+
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="43dp"
+            android:src="@drawable/forhelp_circle" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/rl_bottom"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:lineSpacingExtra="3dp"
+        android:lineSpacingMultiplier="1.1"
+        android:text="@string/success_zhuyi"
+        android:textColor="@color/for_help_text_color"
+        android:textSize="16dp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tv_note">
+
+
+        <ImageView
+            android:id="@+id/iv_animation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/open_first" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
